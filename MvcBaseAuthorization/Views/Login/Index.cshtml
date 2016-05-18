@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Login İndex";
+}
+
+<h2>Kullanıcı giriş sayfası</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.Label("Kullanıcı adı") <br />
+    @Html.TextBox("UserName")
+    @Html.Label("Şifre") <br />
+    @Html.TextBox("Password")
+    <br />
+    <br />
+    <input type="submit" class="btn btn-success" value="Giriş Yap" />
+}
